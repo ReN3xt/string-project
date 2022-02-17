@@ -14,8 +14,8 @@ public class Main {
         for(int i = 0; i < string.length(); i++){
             test = string.charAt(i);
 
-            switch (test) {
-                case 'a', 'e', 'i', 'o', 'u' -> count++;
+            if(test == 'a' || test == 'e' || test == 'i' || test == 'o' || test == 'u'){
+                count++;
             }
         }
 
@@ -29,8 +29,8 @@ public class Main {
         for(int i = 0; i < string.length(); i++){
             test = string.charAt(i);
 
-            switch (test) {
-                case 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z' -> count++;
+            if(test == 'b' || test == 'c' || test == 'd' || test == 'f' || test ==  'g' || test ==  'h' || test ==  'j' || test ==  'l' || test ==  'm' || test ==  'n' || test ==  'p' || test ==  'q' || test ==  'r' || test ==  's' || test ==  't' || test ==  'v' || test ==  'w' || test ==  'x' || test ==  'y' || test ==  'z') {
+                count++;
             }
         }
 
@@ -53,7 +53,8 @@ public class Main {
     }
 
     public int calcolaLettereDoppie(String string) {
-        char test1, test2;
+        char test1;
+        char test2;
         int count = 0;
 
         for(int i = 0; i < string.length() - 1; i++) {
