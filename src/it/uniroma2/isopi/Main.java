@@ -14,14 +14,8 @@ public class Main {
         for(int i = 0; i < string.length(); i++){
             test = string.charAt(i);
 
-            switch(test){
-                case 'a':
-                case 'e':
-                case 'i':
-                case 'o':
-                case 'u':
-                    count++;
-                    break;
+            switch (test) {
+                case 'a', 'e', 'i', 'o', 'u' -> count++;
             }
         }
 
@@ -35,29 +29,8 @@ public class Main {
         for(int i = 0; i < string.length(); i++){
             test = string.charAt(i);
 
-            switch(test){
-                case 'b':
-                case 'c':
-                case 'd':
-                case 'f':
-                case 'g':
-                case 'h':
-                case 'j':
-                case 'l':
-                case 'm':
-                case 'n':
-                case 'p':
-                case 'q':
-                case 'r':
-                case 's':
-                case 't':
-                case 'v':
-                case 'w':
-                case 'x':
-                case 'y':
-                case 'z':
-                    count++;
-                    break;
+            switch (test) {
+                case 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z' -> count++;
             }
         }
 
@@ -71,10 +44,8 @@ public class Main {
         for(int i = 0; i < string.length(); i++){
             test = string.charAt(i);
 
-            switch(test){
-                case ' ':
-                    count++;
-                    break;
+            if (test == ' ') {
+                count++;
             }
         }
 
